@@ -82,7 +82,7 @@ export const Contact = () => {
               </div>
 
                 <div className="space-y-2">
-                  <p className="text-lg text-purple-500">Hostel</p>
+                  <p className="text-lg text-purple-500">College</p>
                   <address className="text-xl not-italic leading-relaxed">
                     CDSIMER, Dayananda Sagar University<br/>
                     DEVARAKAGGALAHALLI, HAROHALLI<br/>
