@@ -41,7 +41,7 @@ const projects = [
 
 ]
 
-export const Portfolio = () => {
+export const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(projects[0])
 
     const color = useMotionValue(COLORS_TOP[0])
@@ -56,7 +56,7 @@ export const Portfolio = () => {
     const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`
   return (
     <motion.section 
-        id="portfolio" 
+        id="projects" 
         style={{
             backgroundImage
         }} 
