@@ -41,7 +41,7 @@ const projects = [
 
 ]
 
-export const Projects = () => {
+export const Portfolio = () => {
     const [selectedProject, setSelectedProject] = useState(projects[0])
 
     const color = useMotionValue(COLORS_TOP[0])
