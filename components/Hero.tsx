@@ -5,7 +5,7 @@ import { motion, useMotionValue, animate, useMotionTemplate } from "framer-motio
 import profilepic from "@/assets/profilepic.png"
 import obj1 from "@/assets/obj1.png";
 import Image from "next/image"
-import { FiArrowDownRight } from "react-icons/fi";
+import { FiLinkedin, FiArrowUpRight } from "react-icons/fi";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"]
 export const Hero = () => {
@@ -72,7 +72,10 @@ export const Hero = () => {
                 </div>
                 <p className="my-6 max-w-xl text-center">You can find me somewhere in Bengaluru.</p>
 
-                <motion.button 
+                    <motion.a 
+                    href="https://www.linkedin.com/in/shashank-chaubey-a257352b7/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                         border,
                         boxShadow
@@ -84,10 +87,13 @@ export const Hero = () => {
                         scale: 0.985
                     }}
                     className="flex w-fit items-center gap-2 rounded-full px-4 py-2"
-                >
-                    Download CV
-                    <FiArrowDownRight />
-                </motion.button>
+                    >
+                    
+                    <FiLinkedin />
+                    LinkedIn
+                    <FiArrowUpRight />
+                    </motion.a>
+
             </div>
             <div className="bg-circle-container">
                 <div className="bg-circle-background"></div>
