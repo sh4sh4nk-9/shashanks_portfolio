@@ -82,7 +82,7 @@ export const Hero = () => {
                     <Image src={obj1} alt="object" width={30} className="rounded-2xl mx-auto" />
                     <Image src={obj1} alt="object" width={30} className="rounded-2xl mx-auto" />
                     <Image src={obj1} alt="object" width={30} className="rounded-2xl mx-auto" />
-                    <p className="font-medium px-2">Add happy customers/clients later</p>
+                    {/* <p className="font-medium px-2">add clients later</p> */}
                 </div>
 
                 <p className="my-6 max-w-xl text-center">You can find me somewhere in Bengaluru.</p>
