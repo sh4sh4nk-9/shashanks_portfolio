@@ -15,31 +15,35 @@ const projects = [
         year:2024, 
         title: 'Ecommerce Year-to-Date (YTD) sales analysis using Tableau', 
         description: 'This visualization provides key insights into business performance, including total sales and profit, order volumes, category-wise sales distribution, and monthly customer acquisition trends across various markets.', 
-        image: tableau1 
+        image: tableau1,
+        link: 'https://public.tableau.com/app/profile/shashank.chaubey4310/viz/ECOMMERCEANALYSIS_17236946835530/Dashboard1'
     },
     { 
         id:2, 
         year:2024, 
         title: 'Data Science job market trends using Tableau', 
         description: 'Global Data Science job trends by role, salary and location', 
-        image: tableau2 
+        image: tableau2,
+        link: 'https://public.tableau.com/app/profile/shashank.chaubey4310/viz/DataScienceJobMarketTrends/Dashboard1'
     },
     { 
         id:3, 
         year:2025, 
         title: 'Breaking Bad Episode Analytics in Tableau',
         description: 'Comprehensive dashboard visualizing episode data, ratings, and viewership trends of Breaking Bad', 
-        image: tableau3 
+        image: tableau3,
+        link: 'https://public.tableau.com/app/profile/shashank.chaubey4310/viz/BreakingBad_17353206913580/Dashboard1'
     },
     { 
         id:4, 
         year:2025, 
         title: 'AI content generator using Next.js', 
         description: 'An AI tool that helps you supercharge your creativity by helping you to write, innovate and ideate like never before', 
-        image: project1
+        image: project1,
+        link: 'https://github.com/sh4sh4nk-9/AI-content-generator'
     },
-
 ]
+
 
 export const Portfolio = () => {
     const [selectedProject, setSelectedProject] = useState(projects[0])
@@ -80,10 +84,31 @@ export const Portfolio = () => {
                     )}
                     
                     {selectedProject.id === project.id && (
-                        <p className="text-gray-400 transistion-all duration-500 ease-in-out">
+                    <>
+                        <p className="text-gray-400 transition-all duration-500 ease-in-out">
                             {project.description}
                         </p>
+                        <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-4 text-base font-medium text-blue-400 hover:text-white transition duration-300 group"
+                    >
+                        <span className="relative group-hover:underline">View Project</span>
+                        <svg
+                            className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+
+                        </>
                     )}
+
             </div>
         ))}
         </div>
