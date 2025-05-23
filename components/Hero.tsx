@@ -8,7 +8,7 @@ import Image from "next/image"
 import { FiLinkedin, FiArrowUpRight } from "react-icons/fi"
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"]
-const phrases = ["Shashank Chaubey", "A Tech Freak.", "A Day Debugger.", "A Night Dreamer."]
+const phrases = ["Shashank Chaubey", "A Tech Freak.", "A Day Debugger.", "A Night Dreamer." ,"A Gay"]
 
 export const Hero = () => {
     const color = useMotionValue(COLORS_TOP[0])
@@ -58,6 +58,7 @@ export const Hero = () => {
     return (
         <motion.section
             style={{ backgroundImage }}
+            id="about"
             className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-gray-200"
         >
             <div className="z-10 flex flex-col items-center">
