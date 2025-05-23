@@ -6,6 +6,7 @@ import project1 from "@/assets/project1.png"
 import tableau1 from "@/assets/tableau1.png"
 import tableau2 from "@/assets/tableau2.png"
 import tableau3 from "@/assets/tableau3.png"
+import RProject1 from "@/assets/RProject1.png"
 import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion'
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"]
@@ -42,6 +43,14 @@ const projects = [
         image: project1,
         link: 'https://github.com/sh4sh4nk-9/AI-content-generator'
     },
+    {
+        id:5, 
+        year:2025, 
+        title: 'Apple products Visualization in R', 
+        description: 'A dataset of 60+ apple products that Visualizes, Star Ratings by RAM, Sale Price and Top 15 Apple Products by Star Rating using R libraries like ggplot2 and dplyr.', 
+        image: RProject1,
+        link: 'https://www.linkedin.com/feed/update/urn:li:activity:7331397678754361345/'  
+    }
 ]
 
 
