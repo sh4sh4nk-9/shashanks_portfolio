@@ -8,7 +8,7 @@ import Image from "next/image"
 import { FiLinkedin, FiArrowUpRight } from "react-icons/fi"
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"]
-const phrases = ["Shashank Chaubey", "A Tech Freak.", "A Day Debugger.", "A Night Dreamer." ,"A Gay"]
+const phrases = ["Shashank Chaubey", "A Tech Freak.", "A Day Debugger.", "A Night Dreamer."]
 
 export const Hero = () => {
     const color = useMotionValue(COLORS_TOP[0])
